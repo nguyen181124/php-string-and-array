@@ -147,9 +147,19 @@
     // print_r(array_filter($a1, "test_odd"));
     
 
-    // $a1 = array("a" => "red", "b" => "green", "c" => "blue", "d" => "yellow");
-    // $result = array_flip($a1);
-    // print_r($result);
+    // $a = array("a" => "red", "b" => "green", "c" => "blue", "d" => "yellow");
+
+    // function flip_Array($a){
+    //     $result = [];
+    
+    //     foreach ($a as $key => $value){
+    //         $result[$value] = $key;
+    //     }
+        
+    //     print_r($result);
+    // }
+    
+    // flip_Array($a); 
     
 
     // $a1 = array("a" => "red", "b" => "green", "c" => "blue", "d" => "yellow");
@@ -224,11 +234,6 @@
     
     // $a = array(1, 2, 3, 4, 5);
     // print_r(array_map("myfunction", $a));
-    
-
-    // $a1 = array("red", "green");
-    // $a2 = array("blue", "yellow");
-    // print_r(array_merge($a1, $a2));
     
 
     // $a1 = array("a" => "red", "b" => "green");
@@ -421,8 +426,31 @@
 //   print_r($result);
 
 
-// $a=array("a"=>"red","b"=>"green","c"=>"red");
-// print_r(array_unique($a));
+//  $a=array("a"=>"red","b"=>"green","c"=>"red");
+
+//  function arrayUnique($a) {
+//     $result = [];
+//     $uniqueValues = []; 
+    
+//     foreach ($a as $value) {
+//         $isUnique = true;
+//         foreach ($uniqueValues as $uniqueValue) {
+//             if ($value == $uniqueValue) {
+//                 $isUnique = false;
+//                 break;
+//             }
+//         }
+        
+//         if ($isUnique) {
+//             $result[] = $value;
+//             $uniqueValues[] = $value; 
+//         }
+//     }
+    
+//     print_r( $result);
+// }
+
+// arrayUnique($a);
 
 
 // $a=array("a"=>"red","b"=>"green");
@@ -629,6 +657,15 @@
     
 
     // print_r(in_array(4, $score));
+
+
+    // $arr = [1, 2, 3, 4, 5];
+    // print_r (next($arr));
+    // print_r (prev($arr));
+    // print_r (next($arr));
+    // print_r (next($arr));
+    // print_r (next($arr));
+    // print_r (reset($arr))
     ?>
 </body>
 

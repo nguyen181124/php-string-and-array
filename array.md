@@ -343,7 +343,7 @@
 
     _Kết quả: 
 
-        - ![](img/demoflip.png)
+      - ![](img/demoflip.png)
 
 1.  `array_intersect()` so sánh các giá trị của hai (hoặc nhiều) mảng và trả về kết quả khớp
 
@@ -936,7 +936,7 @@
 
       - Kết quả: 
 
-          - ![](img/demoeach.png)
+          - ![](img/demoend.png)
 
 1.  `extract()` nhập các biến vào bảng ký hiệu cục bộ từ một mảng
 
@@ -968,7 +968,7 @@
 
       - Kết quả: 
 
-          - ![](img/demoarray.png)
+          - ![](img/demoinarray.png)
 
 1.  `key()` trả về khóa phần tử từ vị trí con trỏ bên trong hiện tại
 
