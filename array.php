@@ -139,12 +139,23 @@
     // print_r($a1);
     
 
-    // function test_odd($var)
-    // {
-    //     return ($var & 1);
-    // }
-    // $a1 = array(1, 3, 2, 3, 4);
-    // print_r(array_filter($a1, "test_odd"));
+    function filterOddNumbers($arr, $callback) {
+        $result = [];
+        
+        foreach ($arr as $key => $value) {
+            if ($callback($value)) { 
+                $result[] = $value;
+            }
+        }
+        
+        print_r($result);
+    }
+    function isOddNumber($number) {
+        return ($number % 2 != 0);
+    }
+    
+    $a1 = [1, 3, 2, 3, 4];
+    filterOddNumbers($a1, "isOddNumber");
     
 
     // $a = array("a" => "red", "b" => "green", "c" => "blue", "d" => "yellow");
@@ -235,6 +246,24 @@
     // $a = array(1, 2, 3, 4, 5);
     // print_r(array_map("myfunction", $a));
     
+
+    // function mergeArrays($array1, $array2) {
+    //     $result = [];
+        
+    //     foreach ($array1 as $arr) {
+    //         foreach ($arr as $key => $value) {
+    //             $result[$key] = $value;
+    //         }
+    //     }
+        
+    //     return $result;
+    // }
+    
+    // $a1 = ["a" => "red", "b" => "green"];
+    // $a2 = ["b" => "green", "c" => "yellow"];
+    
+    // print_r(mergeArrays($a1, $a2));
+
 
     // $a1 = array("a" => "red", "b" => "green");
     // $a2 = array("c" => "blue", "b" => "yellow");
